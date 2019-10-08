@@ -15,35 +15,7 @@
             <div class="box-item" v-for="(it,i) in item" :key="i" @click="inputHandler(it)">
               <span class="num-btn">{{it}}</span>
             </div>
-            <!-- <div class="box-item">
-              <span class="num-btn">5</span>
-            </div>
-            <div class="box-item">
-              <span class="num-btn">6</span>
-            </div> -->
           </div>
-          <!-- <div class="box-items">
-            <div class="box-item">
-              <span class="num-btn">7</span>
-            </div>
-            <div class="box-item">
-              <span class="num-btn">8</span>
-            </div>
-            <div class="box-item">
-              <span class="num-btn">9</span>
-            </div>
-          </div>
-          <div class="box-items">
-            <div class="box-item">
-              <span class="num-btn">00</span>
-            </div>
-            <div class="box-item">
-              <span class="num-btn">0</span>
-            </div>
-            <div class="box-item">
-              <span class="num-btn">.</span>
-            </div>
-          </div> -->
         </div>
         <div class="box-right">
           <div class="box-item" @click="sureHandler">
@@ -71,7 +43,7 @@ export default {
     return {
       delIcon: delIcon,
       numListF: ['1', '2', '3'],
-      numListS:[
+      numListS: [
         ['4', '5', '6'],
         ['7', '8', '9'],
         ['00', '0', '.']
@@ -163,7 +135,6 @@ p{
           background-color: rgb(122, 236, 46);
           color: #ffffff;
           .sure-btn{
-            
           }
         }
       }
