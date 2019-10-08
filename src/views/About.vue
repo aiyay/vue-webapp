@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <NumberKeyBoard />
+    <NumberKeyBoard @inputHandle="fn"/>
   </div>
 </template>
 <script>
@@ -13,7 +13,12 @@ export default {
     NumberKeyBoard
   },
   mounted () {
-   // 
+    //
+  },
+  methods: {
+    fn (val) {
+      console.log(val)
+    }
   }
 }
 </script>

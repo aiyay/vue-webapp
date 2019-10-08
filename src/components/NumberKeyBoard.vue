@@ -51,13 +51,13 @@ export default {
     }
   },
   methods: {
-    inputHandler: (val) => {
-      console.log(val)
+    inputHandler (val) {
+      this.$emit('inputHandle', val)
     },
-    delHandler: () => {
+    delHandler () {
       console.log('del')
     },
-    sureHandler: () => {
+    sureHandler () {
       console.log('sure')
     }
   }
