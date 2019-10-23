@@ -17,21 +17,21 @@ export default {
     title: {
       type: String,
       default: ''
-    },
+    }
   },
-  mounted() {
+  mounted () {
     // 获取时间状态栏高度
-    let tabBarHeight = Number(JSON.parse(localStorage.getItem("tabBarHeight")));
-    document.querySelector(".header").style.top = `${tabBarHeight}px`;
-    document.querySelector(".nav-block").style.height = `${tabBarHeight}px`;
-    document.querySelector(".content").style.paddingTop = `${document.querySelector(".nav-block").offsetHeight + document.querySelector(".header").offsetHeight}px`;
+    let tabBarHeight = Number(JSON.parse(localStorage.getItem('tabBarHeight')))
+    document.querySelector('.header').style.top = `${tabBarHeight}px`
+    document.querySelector('.nav-block').style.height = `${tabBarHeight}px`
+    document.querySelector('.content').style.paddingTop = `${document.querySelector('.nav-block').offsetHeight + document.querySelector('.header').offsetHeight}px`
   },
   methods: {
     goBack () {
-      this.$router.go(-1);
+      this.$router.go(-1)
     }
   }
-};
+}
 </script>
 
 <style scoped lang="less">

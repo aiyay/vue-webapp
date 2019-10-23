@@ -15,7 +15,7 @@ npm run serve
 npm run build:test 
 npm run build:prod
 ```
-## test为测试环境打包，prod为正式环境打包，打包地址在文件夹".env.test/.env.prod"中
+#### test为测试环境打包，prod为正式环境打包，打包地址在文件夹".env.test/.env.prod"中
 
 ### Run your tests
 ```
